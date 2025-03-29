@@ -1,0 +1,42 @@
+# Exclusiones para IDE y herramientas de desarrollo
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+bin/
+build/
+
+# Archivos específicos de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Archivos de log y temporales
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Configuraciones locales y sensibles
+application-local.properties
+application-dev.properties
+config/application-*.properties
+
+# Bases de datos embebidas y archivos de datos
+*.db
+*.h2.db
+data/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+# End Generation Here
+```
