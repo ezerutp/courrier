@@ -1,7 +1,8 @@
 package pe.transporte.courrier.entities;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
 import lombok.*;
 
 @Entity
@@ -13,14 +14,9 @@ import lombok.*;
 @EqualsAndHashCode(callSuper = true)
 public class Cliente extends Usuario {
 
-    @NotBlank(message = "El DNI es obligatorio")
-    @Column(length = 8, unique = true)
-    private String dni;
+    private int enviosTotales;
+    private LocalDateTime fechaRegistro;
+    private String metodoPagoFrecuente;
+    private boolean activo;
 
-    @NotBlank(message = "La dirección es obligatoria")
-    private String direccion;
-
-    @NotBlank(message = "El teléfono es obligatorio")
-    @Pattern(regexp = "\\d{9}", message = "El teléfono debe tener 9 dígitos")
-    private String telefono;
 }
