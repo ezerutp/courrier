@@ -66,6 +66,10 @@ public class Encomienda {
     @JoinColumn(name = "sucursal_destino_id")
     private Sucursal sucursalDestino;
 
+    // Seguimiento
+    @Column(unique = true, nullable = false)
+    private String codigoSeguimiento;
+
     public enum Estado {
         PENDIENTE,
         EN_CAMINO,
