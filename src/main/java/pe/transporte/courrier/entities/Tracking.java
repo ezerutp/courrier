@@ -35,6 +35,10 @@ public class Tracking {
     @JoinColumn(name = "sucursal_id")
     private Sucursal sucursal;
 
+    //Ubicación GPS
+    private Double latitud;
+    private Double longitud;
+
     public enum EstadoTracking {
         REGISTRADO,
         LLEGADA_ORIGEN,

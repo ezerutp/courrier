@@ -47,6 +47,18 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private Rol rol;
 
+    public boolean isCliente() {
+        return this.rol == Rol.CLIENTE;
+    }
+    
+    public boolean isRepartidor() {
+        return this.rol == Rol.REPARTIDOR;
+    }
+    
+    public boolean isAdministrador() {
+        return this.rol == Rol.ADMINISTRADOR;
+    }
+
     public enum Rol {
         CLIENTE,
         REPARTIDOR,

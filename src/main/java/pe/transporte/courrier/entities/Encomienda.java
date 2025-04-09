@@ -41,7 +41,7 @@ public class Encomienda {
     // Remitente formal
     @ManyToOne
     @JoinColumn(name = "cliente_remitente_id")
-    private Cliente clienteRemitente;
+    private Usuario clienteRemitente;
 
     // Remitente temporal
     @ManyToOne
@@ -51,7 +51,7 @@ public class Encomienda {
     // Destinatario formal
     @ManyToOne
     @JoinColumn(name = "cliente_destinatario_id")
-    private Cliente clienteDestinatario;
+    private Usuario clienteDestinatario;
 
     // Destinatario temporal
     @ManyToOne

@@ -1,4 +1,7 @@
-package pe.transporte.courrier.entities;
+// Clase Cliente desactivada temporalmente.
+// Se reactivará si se implementan relaciones específicas con @ManyToOne.
+
+/* package pe.transporte.courrier.entities;
 
 import java.time.LocalDateTime;
 
@@ -20,3 +23,4 @@ public class Cliente extends Usuario {
     private boolean activo;
 
 }
+ */
