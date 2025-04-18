@@ -29,5 +29,5 @@ public interface EncomiendaRepository extends JpaRepository<Encomienda, Long> {
     List<Encomienda> findByEstado(Estado estado);
     Optional<Encomienda> findByCodigoSeguimiento(String codigoSeguimiento);
 
-    boolean eexistsByCodigoSeguimiento(String codigoSeguimiento);
+    boolean existsByCodigoSeguimiento(String codigoSeguimiento);
 }

@@ -107,7 +107,7 @@ public class EncomiendaService {
     }
 
     public boolean existeCodigoSeguimiento(String codigoSeguimiento){
-        return encomiendaRepository.eexistsByCodigoSeguimiento(codigoSeguimiento);
+        return encomiendaRepository.existsByCodigoSeguimiento(codigoSeguimiento);
     }
 
     // Actualizar estado
