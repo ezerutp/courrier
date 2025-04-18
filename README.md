@@ -1,6 +1,4 @@
-from pathlib import Path
-
-readme_content = """# 📦 Courrier - Sistema de Gestión de Encomiendas
+## 📦 Courrier - Sistema de Gestión de Encomiendas
 
 ![Java](https://img.shields.io/badge/Java-17-blue.svg)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
